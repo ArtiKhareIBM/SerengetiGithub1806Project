@@ -8,7 +8,23 @@ packages:
   gitUsername: ArtiKhareIBM
   gitBranch: main
 - name: LowerFSPackage
-  gitServerName: srcGithubCtrl_Arti
+  version: "1.0"
+  gitServerName: RAHS_GH_IBMAccount_SD
   gitUrl: https://github.com/ArtiKhareIBM
-  gitUsername: ArtiKhareIBM
+  gitUsername: rahul-singh-IBM-68
   gitBranch: main
+services:
+- serviceName: project.serengetigithub1806.integrations:lowerfs_account_changed
+  packages:
+  - name: SerengetiGithub1806Project
+    version: "1.0"
+  - name: LowerFSPackage
+    version: "1.0"
+- serviceName: LowerFSPackage:lowerFS
+  packages:
+  - name: LowerFSPackage
+    version: "1.0"
+- serviceName: pub.string:toLower
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2068
