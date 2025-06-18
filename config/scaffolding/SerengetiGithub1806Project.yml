@@ -8,10 +8,9 @@ packages:
   gitUsername: ArtiKhareIBM
   gitBranch: main
 - name: LowerFSPackage
-  version: "1.0"
-  gitServerName: RAHS_GH_IBMAccount_SD
+  gitServerName: rimaSCName
   gitUrl: https://github.com/ArtiKhareIBM
-  gitUsername: rahul-singh-IBM-68
+  gitUsername: rimabarman
   gitBranch: main
 services:
 - serviceName: project.serengetigithub1806.integrations:lowerfs_account_changed
